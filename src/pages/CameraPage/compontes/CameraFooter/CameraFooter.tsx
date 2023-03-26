@@ -21,7 +21,7 @@ const CameraFooter = ({ takePhoto, flipCamera }: CameraFooterTypes) => {
 
   return (
     <StyledCameraFooter>
-      <StyledCameraBtnsContainer>
+      <StyledCameraBtnsContainer data-testid="camera-footer">
         <GeneralButton
           label=""
           sx="flipBtnSx"

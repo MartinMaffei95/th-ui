@@ -7,6 +7,7 @@ Sinapsis Challenge.
 1. Execute `npm install`
 2. Configure the .env file - explication on next section -
 3. Execute `npm run dev` for development or `npm run start` to build and execute locally on port 4200
+4. Happy hacking
 
 ## .env file.
 
@@ -24,11 +25,14 @@ VITE_API_URI; //You can use ==> https://thumbnail-api.adaptable.app
 ## Structure.
 
 The project structure is based on clean architecture. Here have diagram with the folder structure
+
 ![Clean Architecture Diagram](https://github.com/MartinMaffei95/th-ui/blob/main/docs/CleanArchitectureDiagram.png?raw=true)
 
 ## Tests.
 
-We use vitest and React testing library
+We use vitest and React testing library.
+
+![Test coverage](docs\Tests.png)
 
 ## Features
 

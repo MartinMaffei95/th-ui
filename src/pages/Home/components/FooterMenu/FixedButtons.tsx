@@ -23,6 +23,7 @@ import { useSelector } from 'react-redux';
 
 //=> Models
 import { ReduxStateType } from '@/models';
+import GeneralButton from '@/components/Buttons/GeneralButton';
 
 type FixedButtonsType = {
   handleSelection: Function;
@@ -44,29 +45,35 @@ const FixedButtons = ({ handleSelection }: FixedButtonsType) => {
 
   return (
     <div style={FooterSx} data-testid="buttons-container">
-      <Button
+      <GeneralButton
+        center
         value={'new_file'}
-        fx={newFile}
+        action={newFile}
         icon={<AiFillFileAdd style={IconSx} />}
         name={'add_file'}
       />
-      <Button
+      <GeneralButton
+        center
         value={'crop_selection'}
-        fx={handleSelection}
+        testId="crop_button"
+        action={handleSelection}
         icon={<BiCrop style={IconSx} />}
         name={'setting'}
         disabled={image ? false : true}
       />
-      <Button
+      <GeneralButton
+        center
         value={'zoom_selection'}
-        fx={handleSelection}
+        testId="zoom_button"
+        action={handleSelection}
         icon={<MdCropFree style={IconSx} />}
         name={'setting'}
         disabled={image ? false : true}
       />
-      <Button
+      <GeneralButton
+        center
         value={'preview'}
-        fx={() => showCroppedImage()}
+        action={() => showCroppedImage()}
         icon={<MdPreview style={IconSx} />}
         name={'preview'}
         disabled={image ? false : true}

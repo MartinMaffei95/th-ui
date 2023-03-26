@@ -25,7 +25,12 @@ describe('Home', () => {
     );
   });
 
-  // test('should be render the main-role component', async () => {
-  //   expect(screen.getByTestId('camera'));
-  // });
+  test('should be render the footer of the camera & the 3 buttons', async () => {
+    const cameraFooter = screen.getByTestId('camera-footer');
+    const buttons = cameraFooter.querySelectorAll('button');
+    expect(buttons.length).toBe(3);
+    expect(cameraFooter);
+
+    buttons.forEach((button) => button.click());
+  });
 });

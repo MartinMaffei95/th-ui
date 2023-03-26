@@ -16,7 +16,11 @@ const CropSection = () => {
     dispatch(updateSettingsData({ name, value: Number(value) }));
   };
   return (
-    <div className="section-in" style={SettingContainerSx}>
+    <div
+      className="section-in"
+      data-testid="crop-area"
+      style={SettingContainerSx}
+    >
       <Button
         btn_sx={SettingButtonSx}
         value={`${2 / 1}`}

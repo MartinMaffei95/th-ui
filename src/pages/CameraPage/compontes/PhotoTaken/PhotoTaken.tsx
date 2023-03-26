@@ -12,6 +12,7 @@ type PhotoTakenTypes = {
 };
 
 const PhotoTaken = ({ savePhoto, cleanImage, photo }: PhotoTakenTypes) => {
+  console.log(photo);
   return (
     <StyledPhotoTaken>
       <div

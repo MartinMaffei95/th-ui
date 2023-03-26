@@ -1,10 +1,11 @@
+import { ApiImage } from '@/pages/ComunityUploads/models';
 import { sendSnackbar } from '@/services/snackbar.manager';
 import { setLoading } from '../../../redux/slices/appSlice';
 import { store } from '../../../redux/store/store';
 
 const { VITE_API_URI } = import.meta.env;
 
-export const getImageById = async (id: string) => {
+export const getImageById = async (id: string): Promise<ApiImage[] | Error> => {
   try {
     store.dispatch(setLoading(true));
 

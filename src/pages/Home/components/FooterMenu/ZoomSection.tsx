@@ -26,9 +26,14 @@ const ZoomSection = () => {
 
   const { zoom } = useSelector((state: ReduxStateType) => state.settingTools);
   return (
-    <div className="section-in" style={SettingContainerSx}>
+    <div
+      className="section-in"
+      data-testid="zoom-area"
+      style={SettingContainerSx}
+    >
       <button
         name="zoom"
+        aria-label="zoom-in"
         value={zoom - 0.1}
         onClick={(e: any) => {
           handleSetting(e);
@@ -38,6 +43,7 @@ const ZoomSection = () => {
         <MdZoomOut style={IconSx} />
       </button>
       <input
+        aria-label="zoom-input"
         type="range"
         name="zoom"
         value={zoom}
@@ -50,6 +56,7 @@ const ZoomSection = () => {
       />
       <button
         name="zoom"
+        aria-label="zoom-out"
         value={zoom + 0.1}
         onClick={(e: any) => {
           handleSetting(e);

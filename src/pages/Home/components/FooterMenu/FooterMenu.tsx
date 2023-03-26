@@ -1,9 +1,6 @@
 import { useState, MouseEvent } from 'react';
-// =>= Icons
-import { AiFillCloseCircle } from 'react-icons/ai';
 // =>> Styles
 import { FooterContainerSx, sectionSelectedSx } from '../../styled-components';
-import { ButtonSx, CloseButtonSx, IconSx } from '../../../../styles';
 // ==> Components
 import FixedButtons from '@/pages/Home/components/FooterMenu/FixedButtons';
 import CropSection from '@/pages/Home/components/FooterMenu/CropSection';

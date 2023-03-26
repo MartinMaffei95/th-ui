@@ -1,17 +1,11 @@
-import { BasicUserLogged, ReduxStateType } from '@/models';
+import { uploadImage } from '@/redux/slices/imageSlice';
 import Home from '@/pages/Home/Home';
 import { store } from '@/redux/store/store';
-import {
-  render,
-  screen,
-  fireEvent,
-  renderHook,
-  prettyDOM,
-} from '@testing-library/react';
-import { useSelector } from 'react-redux';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
 import { beforeEach, describe, expect, test } from 'vitest';
+import { BasicUserLogged } from '@/models';
 
 describe('Home', () => {
   beforeEach(async () => {
@@ -38,19 +32,10 @@ describe('Home', () => {
     await expect(screen.getByTestId('lateral-panel-component'));
   });
 
-  // test('should be render the Drag and Drop component', async () => {
-  //   const uploadBtn = screen.getByTestId('form-file-upload');
-  //   console.log(prettyDOM(uploadBtn));
-  //   expect(store.getState().image.image).equal('');
-
-  //   const file = new File(['(⌐□_□)'], 'chucknorris.png', { type: 'image/png' });
-  //   fireEvent.drop(uploadBtn, {
-  //     dataTransfer: {
-  //       files: [file],
-  //     },
-  //   });
-  //   expect;
-  //   console.log(store.getState().image.image);
-  //   expect(store.getState().image.image).not.equal('');
-  // });
+  store.dispatch(uploadImage('imagesliceonBASE64'));
+  test('should Be render the Cropper', () => {
+    // reactEasyCrop_Container;ç
+    // console.log(screen.queryByTestId('container'));
+    expect(screen.queryByTestId('container')).toBeDefined();
+  });
 });

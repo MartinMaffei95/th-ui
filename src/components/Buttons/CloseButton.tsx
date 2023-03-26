@@ -16,7 +16,7 @@ const CloseButton = ({ action = () => {}, color = '#000' }: ButtonProps) => {
     ...CloseButtonSx,
   });
   return (
-    <Closebutton onClick={() => action()}>
+    <Closebutton data-testid="generic-close-btn" onClick={() => action()}>
       <AiFillCloseCircle style={{ ...IconSx, ...{ color: color } }} />
     </Closebutton>
   );

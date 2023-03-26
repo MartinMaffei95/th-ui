@@ -25,7 +25,7 @@ const Error404 = () => {
         </div>
       </div>
       <div className="container">
-        <img src={'/warning.png'} />
+        <img src={'/warning.png'} alt="Error 404 image" />
       </div>
     </StyledErrorContainer>
   );

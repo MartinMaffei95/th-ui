@@ -25,7 +25,7 @@ const Error500 = () => {
         </div>
       </div>
       <div className="container">
-        <img src={'/404.png'} />
+        <img src={'/404.png'} alt="Error 500 image" />
       </div>
     </StyledErrorContainer>
   );

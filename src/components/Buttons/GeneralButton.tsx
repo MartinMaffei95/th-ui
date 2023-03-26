@@ -24,7 +24,7 @@ const GeneralButton = ({
   sx,
   fullWidth = false,
   testId = '',
-  value = '',
+  value = 'close',
   disabled = false,
   name = '',
   variant = 'text',

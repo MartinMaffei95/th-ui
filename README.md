@@ -1,6 +1,8 @@
+![Thumbnail generator Logo](https://raw.githubusercontent.com/MartinMaffei95/th-ui/d77b5f180722cf88d8a2dd8d9439916d4dc3c72c/docs/logo.svg)
+
 # Thumbnail Generator.
 
-Sinapsis Challenge.
+Sinapsis Challenge. This is a UI for a Thumbnail Generator. Let you create thumbnails from iamges of your gallery or our picking photos with your camera.
 
 ## How run.
 
@@ -32,7 +34,7 @@ The project structure is based on clean architecture. Here have diagram with the
 
 We use vitest and React testing library.
 
-![Test coverage](docs\Tests.png)
+![Test coverage](https://raw.githubusercontent.com/MartinMaffei95/th-ui/main/docs/Tests.png)
 
 ## Features
 
@@ -40,3 +42,36 @@ We use vitest and React testing library.
 2. Crop and resize your images.
 3. Download the images.
 4. Logged how Guest or use our google account with Auth0 and upload our images on the web
+
+## Requirements for the project
+
+🟢 The UI let's you upload files through AJAX  
+🟢 You should mock the required endpoints (or solve and integrate with:thumbnail-generator-api)  
+🟢 It should preview the image that is going to be processed  
+🟢 It should give the users the urls of the new thumbnails and preview them
+
+### Grading Guidelines
+
+🟢 Every requirement is met  
+🟢 The solution runs on our enviroment  
+🟢 Tech Stack: React v18 (or highest) using Typescript  
+🟢 It leverages some design framework: Material UI (https://mui.com/)  
+🟢 Any ENV specific value should be configurable and documented  
+🟢 Everything should work after following a simple README (ideally: npm install; npm start)  
+🟢 The code should be clear and easy to read / debug  
+🟢 It's responsive and works well with desktops, phones and tablets  
+🟢 It includes transitions, loaders, progress status  
+🟢 It uses Redux extensively (https://redux-observable.js.org/)  
+🟢 Includes a simple login (recommended: AWS Cognito or Auth0)
+
+### Nice moves
+
+🟢 It uses Styled Components for the styling of the components instead of using css or scss. Including the general css such as resets, font-family, etc in the index.css.  
+🟢 It includes drag-and-drop functionality + visual cues to help the user  
+🟢 It's Dockerized for local development / testing  
+🟢 It includes some kind of testing (unit tests, integration tests, etc) with at least 70% coverage
+
+### Wait, WHAT?!
+
+🟢 It works also with the device camera  
+🟢 It include a croping area / resize helper

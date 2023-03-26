@@ -1,4 +1,8 @@
-![Thumbnail generator Logo](https://raw.githubusercontent.com/MartinMaffei95/th-ui/d77b5f180722cf88d8a2dd8d9439916d4dc3c72c/docs/logo.svg)
+<img 
+alt="Thumbnail generator Logo"
+src="https://raw.githubusercontent.com/MartinMaffei95/th-ui/d77b5f180722cf88d8a2dd8d9439916d4dc3c72c/docs/logo.svg"
+width="30vw"
+/>
 
 # Thumbnail Generator.
 

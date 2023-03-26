@@ -66,7 +66,7 @@ We use vitest and React testing library.
 🟢 The code should be clear and easy to read / debug  
 🟢 It's responsive and works well with desktops, phones and tablets  
 🟢 It includes transitions, loaders, progress status  
-🟢 It uses Redux extensively (https://redux-observable.js.org/)  
+🟠 It uses Redux extensively (https://redux-observable.js.org/)  
 🟢 Includes a simple login (recommended: AWS Cognito or Auth0)
 
 ### Nice moves

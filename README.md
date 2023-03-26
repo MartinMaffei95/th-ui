@@ -24,6 +24,7 @@ VITE_API_URI; //You can use ==> https://thumbnail-api.adaptable.app
 ## Structure.
 
 The project structure is based on clean architecture. Here have diagram with the folder structure
+![Clean Architecture Diagram](https://github.com/MartinMaffei95/th-ui/blob/main/docs/CleanArchitectureDiagram.png?raw=true)
 
 ## Tests.
 

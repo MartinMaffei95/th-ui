@@ -24,7 +24,6 @@ export const postImg = async () => {
     formData.append('thumbnail', imageOnFile);
     formData.append('uploaded_by', user.nickname);
     formData.append('name', user.name);
-    console.log('formadata', formData);
 
     const response = await fetch(`${VITE_API_URI}/thumbnail`, {
       method: 'POST',

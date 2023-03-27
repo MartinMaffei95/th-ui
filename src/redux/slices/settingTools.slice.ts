@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { SettingsSliceType } from '../../models/Redux.model';
-import { Draft } from '@reduxjs/toolkit';
 
 type Typ = {
   name: string;

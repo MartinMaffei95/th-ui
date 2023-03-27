@@ -25,14 +25,13 @@ const ButtonsContainer = () => {
       };
       const guestData = JSON.stringify(guestUser);
       localStorage.setItem('user', guestData);
-      console.log('entrando como invitado');
       navigate('/');
     }
     if (loginType === 'user') {
       try {
         loginWithPopup();
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     }
   };

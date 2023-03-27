@@ -24,7 +24,6 @@ const ThumbnailEditor = () => {
   const onCropComplete = useCallback(
     async (croppedArea: Area, croppedAreaPixels: Area) => {
       if (!b64img) return;
-      console.log(b64img, croppedAreaPixels);
       const croppedImage = await getCroppedImg(b64img, croppedAreaPixels);
       dispatch(previewImage(croppedImage));
       dispatch(updateSettingsData({ name: 'area', value: croppedAreaPixels }));

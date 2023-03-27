@@ -34,8 +34,6 @@ describe('Home', () => {
 
   store.dispatch(uploadImage('imagesliceonBASE64'));
   test('should Be render the Cropper', () => {
-    // reactEasyCrop_Container;ç
-    // console.log(screen.queryByTestId('container'));
     expect(screen.queryByTestId('container')).toBeDefined();
   });
 });

@@ -18,27 +18,9 @@ export const loginLike = async (loginType: 'guest' | 'user') => {
     };
     const guestData = JSON.stringify(guestUser);
     localStorage.setItem('user', guestData);
-    console.log('entrando como invitado');
     navigate('/');
   }
   if (loginType === 'user') {
     const res = await loginWithPopup();
-
-    // try {
-    //   if (isAuthenticated && user?.name && user?.email) {
-    //     const userLogged: BasicUserLogged = {
-    //       name: user?.name,
-    //       nickname: user?.email,
-    //       type: 'authorized',
-    //     };
-    //     const userData = JSON.stringify(userLogged);
-
-    //     localStorage.setItem('user', userData);
-    //     console.log('entrando con auth0');
-    //     navigate('/');
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // }
   }
 };

@@ -15,7 +15,7 @@ const LeftMenu = () => {
       <Box sx={UserHeaderSx}>
         {user?.picture ? (
           <img
-            src={user?.picture}
+            src={user?.picture || '/logo.svg'}
             alt={`${user?.nickname} profile image`}
             style={{ borderRadius: '50%', height: '100%' }}
           />

@@ -1,10 +1,11 @@
-<img 
+
+  <img 
 alt="Thumbnail generator Logo"
 src="https://raw.githubusercontent.com/MartinMaffei95/th-ui/d77b5f180722cf88d8a2dd8d9439916d4dc3c72c/docs/logo.svg"
-width="30vw"
+width="120vw"
 />
-
-# Thumbnail Generator.
+  
+# Thumbnail Generator. 
 
 Sinapsis Challenge. This is a UI for a Thumbnail Generator. Let you create thumbnails from iamges of your gallery or our picking photos with your camera.
 
@@ -65,7 +66,7 @@ We use vitest and React testing library.
 🟢 The code should be clear and easy to read / debug  
 🟢 It's responsive and works well with desktops, phones and tablets  
 🟢 It includes transitions, loaders, progress status  
-🟢 It uses Redux extensively (https://redux-observable.js.org/)  
+🟠 It uses Redux extensively (https://redux-observable.js.org/)  
 🟢 Includes a simple login (recommended: AWS Cognito or Auth0)
 
 ### Nice moves

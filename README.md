@@ -1,11 +1,10 @@
-
-  <img 
+<img 
 alt="Thumbnail generator Logo"
 src="https://raw.githubusercontent.com/MartinMaffei95/th-ui/d77b5f180722cf88d8a2dd8d9439916d4dc3c72c/docs/logo.svg"
 width="120vw"
 />
-  
-# Thumbnail Generator. 
+
+# Thumbnail Generator.
 
 Sinapsis Challenge. This is a UI for a Thumbnail Generator. Let you create thumbnails from iamges of your gallery or our picking photos with your camera.
 

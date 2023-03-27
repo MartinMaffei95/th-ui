@@ -5,7 +5,7 @@ import { store } from '../../../redux/store/store';
 
 const { VITE_API_URI } = import.meta.env;
 
-export const getAllImages = async (): Promise<ApiImage[] | Error> => {
+export const getAllImages = async (): Promise<ApiImage[] | never> => {
   try {
     store.dispatch(setLoading(true));
 

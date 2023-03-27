@@ -21,7 +21,7 @@ describe('Testing of services of page', async () => {
     let loading = store.getState().app.loading;
     expect(loading).toBeFalsy();
     expect(loadingFx).toBeCalledTimes(2);
-    expectTypeOf(data).toEqualTypeOf<ApiImage[] | Error>();
+    expectTypeOf(data).toEqualTypeOf<ApiImage[]>();
   });
 
   test('obtain-my-images - should be return a array of images', async () => {
@@ -33,7 +33,7 @@ describe('Testing of services of page', async () => {
     expect(loading).toBeFalsy();
     expect(loadingFx).toBeCalledTimes(2);
 
-    expectTypeOf(data).toEqualTypeOf<ApiImage[] | Error>();
+    expectTypeOf(data).toEqualTypeOf<ApiImage[]>();
   });
 
   test('obtain-image-by-id - should be return a array of images', async () => {
@@ -46,7 +46,7 @@ describe('Testing of services of page', async () => {
     expect(loading).toBeFalsy();
     expect(loadingFx).toBeCalledTimes(2);
 
-    expectTypeOf(data).toEqualTypeOf<ApiImage[] | Error>();
+    expectTypeOf(data).toEqualTypeOf<ApiImage[]>();
   });
 
   // ## Adapters

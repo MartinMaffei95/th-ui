@@ -6,7 +6,7 @@ import { ApiImage } from '@/pages/ComunityUploads/models';
 import { LoginContainer } from '@/pages/Login/styled-components';
 const { VITE_API_URI } = import.meta.env;
 
-export const getMyImages = async (): Promise<ApiImage[] | Error> => {
+export const getMyImages = async (): Promise<ApiImage[] | never> => {
   try {
     store.dispatch(setLoading(true));
 

@@ -13,7 +13,8 @@ export default defineConfig({
   },
   plugins: [basicSsl(), react()],
   server: {
-    host: true,
+    host: '0.0.0.0',
+    port: 3000,
   },
   test: {
     coverage: {
